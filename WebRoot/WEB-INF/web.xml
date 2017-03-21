@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+ 
+  <display-name>com.xyg.test.servlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+ 	<welcome-file>Success.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>A</servlet-name>
+    <servlet-class>com.xyg.test.servlet.Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>A</servlet-name>
+    <url-pattern>*.A</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>C</servlet-name>
+    <servlet-class>com.xyg.test.servlet.delinsparkServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>C</servlet-name>
+    <url-pattern>*.C</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+   <servlet>
+    <servlet-name>E</servlet-name>
+    <servlet-class>com.xyg.test.servlet.selectparkServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>E</servlet-name>
+    <url-pattern>*.E</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <servlet-name>F</servlet-name>
+    <servlet-class>com.xyg.test.servlet.carServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>F</servlet-name>
+    <url-pattern>*.F</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>H</servlet-name>
+    <servlet-class>com.xyg.test.servlet.selectparkServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>H</servlet-name>
+    <url-pattern>*.H</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>G</servlet-name>
+    <servlet-class>com.xyg.test.servlet.selectHisServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>G</servlet-name>
+    <url-pattern>*.G</url-pattern>
+  </servlet-mapping> 
+  
+</web-app>
